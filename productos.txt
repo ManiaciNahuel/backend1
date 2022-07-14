@@ -1,44 +1,37 @@
-[
-  {
-    "title": "Producto",
-    "price": 1250,
-    "thumbnail": "url",
-    "id": 1
-  },
-  {
-    "title": "Producto",
-    "price": 2250,
-    "thumbnail": "url",
-    "id": 2
-  },
-  {
-    "title": "Producto",
-    "price": 3250,
-    "thumbnail": "url",
-    "id": 3
-  },
-  {
-    "title": "Producto",
-    "price": 4250,
-    "thumbnail": "url",
-    "id": 4
-  },
-  {
-    "title": "Producto",
-    "price": 5250,
-    "thumbnail": "url",
-    "id": 5
-  },
-  {
-    "title": "Producto",
-    "price": 6250,
-    "thumbnail": "url",
-    "id": 6
-  },
-  {
-    "title": "Producto",
-    "price": 7250,
-    "thumbnail": "url",
-    "id": 7
-  }
+[{
+        "title": "Producto 1",
+        "price": 1250,
+        "imagen": "https://cdn3.iconfinder.com/data/icons/nature-37/120/aaqqdqqas-256.png",
+        "id": 1
+    },
+    {
+        "title": "Producto 2",
+        "price": 2250,
+        "imagen": "https://cdn3.iconfinder.com/data/icons/nature-37/120/aeaaqas-256.png",
+        "id": 2
+    },
+    {
+        "title": "Producto 3",
+        "price": 3250,
+        "imagen": "https://cdn3.iconfinder.com/data/icons/nature-37/120/tempaltaaae-256.png",
+        "id": 3
+    },
+    {
+        "title": "Producto 1",
+        "price": 1250,
+        "imagen": "https://cdn3.iconfinder.com/data/icons/nature-37/120/aaqqdqqas-256.png",
+        "id": 1
+    },
+    {
+        "title": "Producto 2",
+        "price": 2250,
+        "imagen": "https://cdn3.iconfinder.com/data/icons/nature-37/120/aeaaqas-256.png",
+        "id": 2
+    },
+    {
+        "title": "Producto 3",
+        "price": 3250,
+        "imagen": "https://cdn3.iconfinder.com/data/icons/nature-37/120/tempaltaaae-256.png",
+        "id": 3
+    }
 ]
