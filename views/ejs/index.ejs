@@ -1,23 +1,24 @@
 <main>
     <button onclick="location.href = '/productos'">Agregar productos</button>
     <section>
-        <%if productos{ %>
+        <%if (productos) { %>
             <h1 style="display:flex; justify-content: center; margin:50px">Lista de productos</h1>
             <section style="display:flex; justify-content: center; column-gap: 30px; flex-wrap: wrap; margin: 30px">
                 <% for (const product of productos) {%>
                     <article style="margin-bottom: 40px">
-                        <img style="width: 90px; " src=<%=product.imagen %>
-                        <%=product.title%> />
-                            <h3>
-                                <%=product.title %>
-                            </h3>
-                            <b>$ <%=product.price %></b>
+                        <img style="width: 90px; " src=<%=product.imagen %> />
+                        <h3>
+                            <%=product.title %>
+                        </h3>
+                        <p>$
+                            <%=product.price %>
+                        </p>
                     </article>
                     <br>
-                    <%};
-                </section>
-                    %>
-                        <h1 style="display:flex; justify-content: center; margin:50px">No hay productos</h1>
-
+                    <%};%>
             </section>
+            <% } else { %>
+                <h1 style="display:flex; justify-content: center; margin:50px">No hay productos</h1>
+                <% } %>
+    </section>
 </main>
