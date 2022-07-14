@@ -2,6 +2,7 @@ extends main
 
 block content
   main 
+    button(onclick="location.href = '/productos'") Agregar productos
     section
       h1="Lista de Productos"
       each element in productos
@@ -9,4 +10,3 @@ block content
             img(src=element.imagen, alt="")
             h3=element.title 
             p= element.price
-    
