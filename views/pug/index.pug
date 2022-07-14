@@ -1,0 +1,12 @@
+extends main
+
+block content
+  main 
+    section
+      h1="Lista de Productos"
+      each element in productos
+        article 
+            img(src=element.imagen, alt="")
+            h3=element.title 
+            p= element.price
+    

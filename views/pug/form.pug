@@ -1,0 +1,19 @@
+
+block content 
+h2="Agregar producto"
+form(action="/productos", method="post") 
+    label(for="title") Nombre producto: 
+    br
+    input(type="text" id="title" name="title")
+    br
+    label(for="price") Precio: 
+    br
+    input(type="text" id="price" name="price")
+    br
+    label(for="imagen") Url de la imagen: 
+    br
+    input(type="text" id="imagen" name="imagen")
+    br
+    button Enviar
+    
+</form>

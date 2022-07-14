@@ -4,30 +4,19 @@ const fs = require('fs')
 
 app.use(express.urlencoded({ extended: true }))
 
-app.set('views', './views');
 const productos = JSON.parse(fs.readFileSync("productos.txt", 'utf-8'))
 
-// Handlebars
-const exphbs = require("express-handlebars");
+// Pug
+app.set("view engine", ".pug");
+app.set("views", "./views/pug");
 
-app.set("views", "./views/handlebars");
-app.engine(
-    ".hbs",
-    exphbs.engine({
-        defaultLayout: "main",
-        layoutsDir: "./views/handlebars/layouts",
-        partialsDir: "./views/handlebars/partials",
-        extname: ".hbs",
-    })
-)
-app.set("view engine", ".hbs");
 
 app.get('/', (request, respuesta) => {
-    respuesta.render("partials/index", { productos })
+    respuesta.render("index", { productos })
 })
 
 app.get('/productos', (request, respuesta) => {
-    respuesta.render("partials/form", { productos })
+    respuesta.render("form", { productos })
 })
 
 app.post('/productos', (req, res) => {
