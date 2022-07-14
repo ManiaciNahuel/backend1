@@ -7,8 +7,8 @@ app.use(express.urlencoded({ extended: true }))
 const productos = JSON.parse(fs.readFileSync("productos.txt", 'utf-8'))
 
 // Pug
-app.set("view engine", ".pug");
-app.set("views", "./views/pug");
+app.set("view engine", "ejs");
+app.set("views", "./views/ejs");
 
 
 app.get('/', (request, respuesta) => {
