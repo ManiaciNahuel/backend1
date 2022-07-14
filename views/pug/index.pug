@@ -5,8 +5,9 @@ block content
     button(onclick="location.href = '/productos'") Agregar productos
     section
       h1="Lista de Productos"
-      each element in productos
-        article 
-            img(src=element.imagen, alt="")
-            h3=element.title 
-            p= element.price
+      section(style="display:flex; justify-content: center; column-gap: 30px; flex-wrap: wrap; margin: 30px")
+        each element in productos
+            article 
+                img(src=element.imagen, alt="")
+                h3=element.title 
+                p= element.price
